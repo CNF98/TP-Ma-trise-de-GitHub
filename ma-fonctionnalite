@@ -1,7 +1,7 @@
 import requests
 
 USERNAME = "Cheikh Faye"
-TOKEN = "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"
+TOKEN = "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"  # Pas très safe ça !
 REPO_OWNER = "CNF98"
 REPO_NAME = "TP-Ma-trise-de-GitHub"
 BRANCH_NAME = "ma-fonctionnalite"
