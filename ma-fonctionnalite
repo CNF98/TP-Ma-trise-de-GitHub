@@ -1,0 +1,25 @@
+import requests
+
+USERNAME = "Cheikh Faye"
+TOKEN = "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"
+REPO_OWNER = "CNF98"
+REPO_NAME = "TP-Ma-trise-de-GitHub"
+BRANCH_NAME = "ma-fonctionnalite"
+
+def get_pulls_count():
+    url = f"https://api.github.com/repos/{CNF98}/{TP-Ma-trise-de-GitHub}/pulls"
+    params = {
+        "state": "all",
+        "base": ma-fonctionnalité
+    }
+    headers = {
+        "Authorization": f"token {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}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+
+    response = requests.get(url, params=params, headers=headers)
+    pulls = response.json()
+    return len(pulls)
+
+pulls_count = get_pulls_count()
+print(f"Le nombre de pulls sur la branche '{ma-fonctionnalité}' est : {pulls_count}")
